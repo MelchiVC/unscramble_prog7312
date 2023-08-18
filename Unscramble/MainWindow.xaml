@@ -1,0 +1,34 @@
+﻿<Window x:Class="Unscramble.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unscramble"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="DarkSlateGray" BorderBrush="White">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="149*"/>
+            <RowDefinition Height="285*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="guessBtn" Content="GUESS" HorizontalAlignment="Left"  FontWeight="ExtraBold" FontSize="19px" FontFamily="Times New Roman" Foreground="white" Background="DarkOrange" Margin="238,119,0,0" VerticalAlignment="Top" Height="35" Width="117" Click="guessBtn_Click" Grid.Row="1" RenderTransformOrigin="-0.177,0.829"/>
+        <Label x:Name="headingLbl" Content="UNSCRAMBLE THESE WORDS"  FontWeight="ExtraBold" FontSize="25px" FontFamily="Times New Roman" Foreground="white" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="guessTxtBox" HorizontalAlignment="Center" Margin="0,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" TextChanged="TextBox_TextChanged" Height="16" Grid.Row="1"/>
+        <TextBlock x:Name="hint"  Text="Enter 'hint' for a hint." FontSize="16" Visibility="hidden" FontWeight="ExtraBold"  FontFamily="Times New Roman" Foreground="white" HorizontalAlignment="Left" Margin="0,199,0,41" Width="168" Grid.Row="1"/>
+
+        <TextBlock x:Name="QUIT" Text="Enter 'quit' to quit the game." FontSize="16"  Visibility="hidden" FontWeight="ExtraBold"  FontFamily="Times New Roman" Foreground="white" HorizontalAlignment="Left" Margin="0,169,0,57" Width="222" RenderTransformOrigin="0.5,0.5" Grid.Row="1"/>
+
+
+
+        <TextBlock x:Name="scrambledWordTextBlock" FontSize="24"  FontWeight="ExtraBold"  Visibility="Visible"  FontFamily="Times New Roman" Foreground="white" HorizontalAlignment="Left" Margin="372,104,0,0" Width="168"/>
+
+        <TextBlock x:Name="resultTextBlock" FontSize="11"  FontWeight="ExtraBold" Visibility="Visible"  FontFamily="Times New Roman" Foreground="white" HorizontalAlignment="Left" Margin="296,20,0,217" Width="244" Grid.Row="1"/>
+        <Button x:Name="buttonTry" Content="TRY AGAIN" HorizontalAlignment="Left"  FontWeight="ExtraBold" FontSize="19px" FontFamily="Times New Roman" Foreground="white" Background="DarkRed" Margin="421,119,0,0" VerticalAlignment="Top" Height="38" Width="127" RenderTransformOrigin="0.504,0.504" Click="buttonTry_Click" Grid.Row="1"/>
+        <Button x:Name="buttonHint" Content="HINT" HorizontalAlignment="Center"   FontWeight="ExtraBold" FontSize="19px" FontFamily="Times New Roman" Foreground="white" Background="DarkMagenta" Margin="0,185,0,0" VerticalAlignment="Top" Height="37" Width="114" RenderTransformOrigin="0.504,0.54" Click="buttonHint_Click" Grid.Row="1"/>
+        <Button x:Name="buttonQuit" Content="QUIT" HorizontalAlignment="Left"  FontWeight="ExtraBold" FontSize="16px" FontFamily="Times New Roman" Foreground="white" Background="Firebrick" Margin="714,10,0,0" VerticalAlignment="Top" Height="43" Width="51" Click="buttonQuit_Click"/>
+
+    </Grid>
+
+</Window>
+
+
